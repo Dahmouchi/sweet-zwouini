@@ -1,12 +1,13 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import Navigation from "./navigation";
+import { navLinks } from "@/db/navLinks";
 
 interface HeaderClientProps {
-  children: React.ReactNode;
   className?: string;
 }
 
-const HeaderClient: React.FC<HeaderClientProps> = ({ children, className }) => {
+const HeaderClient: React.FC<HeaderClientProps> = ({ className }) => {
   const navbarRef = useRef<HTMLDivElement>(null);
   const [isSticky, setIsSticky] = useState(false);
 
@@ -34,7 +35,11 @@ const HeaderClient: React.FC<HeaderClientProps> = ({ children, className }) => {
         isSticky ? "is-sticky" : ""
       } ${className || ""}`}
     >
-      {children}
+      <Navigation
+        navLinks={navLinks}
+        logo={isSticky ? "/images/logo.png" : "/images/logowhite.png"}
+        isSticky={isSticky}
+      />
     </div>
   );
 };

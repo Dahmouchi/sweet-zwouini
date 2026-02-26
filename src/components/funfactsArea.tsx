@@ -5,7 +5,7 @@ const FunfactsArea = () => {
         <div className="row align-items-center">
           <div className="col-lg-5 col-md-12">
             <div className="section-title position-relative">
-              <h2 className="fs-32 mb-0 fw-semibold text-uppercase">
+              <h2 className="fs-32 mb-0 fw-semibold ">
                 Nous gagnons votre confiance
               </h2>
             </div>

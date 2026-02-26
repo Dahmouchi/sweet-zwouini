@@ -54,7 +54,7 @@ Default CSS
   --fontFamily: "Poppins", sans-serif;
   --headingFontFamily: "Unbounded", sans-serif;
   --primaryColor: #f57799;
-  --secondaryColor: #b500b2;
+  --secondaryColor: #f75270;
   --paragraphColor: #555555;
   --whiteColor: #ffffff;
   --blackColor: #000000;
@@ -81,6 +81,18 @@ h6 {
   color: var(--primaryColor);
   font-weight: 700;
   font-family: var(--headingFontFamily);
+  text-transform: lowercase;
+}
+
+.h1::first-letter,
+.h2::first-letter,
+.h4::first-letter,
+.h6::first-letter,
+h1::first-letter,
+h2::first-letter,
+h4::first-letter,
+h6::first-letter {
+  text-transform: uppercase;
 }
 .text-black {
   color: var(--blackColor);
@@ -257,7 +269,9 @@ p:last-child {
 .section-title h2.fs-32 {
   font-size: 32px;
 }
-
+.fs-38 {
+  font-size: 38px;
+}
 .section-title p {
   margin-top: 20px;
 }
@@ -1083,6 +1097,9 @@ Main Banner Area CSS
 }
 
 .main-banner-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 30px;
 }
 
@@ -1388,7 +1405,7 @@ Funfacts Area CSS
 }
 
 .single-funfact-box h3 span {
-  color: var(--primaryColor);
+  color: var(--whiteColor);
 }
 
 .single-funfact-box p {
@@ -2525,7 +2542,9 @@ Feedback Area CSS
 .feedback-slides {
   max-width: 870px;
 }
-
+.mb-40 {
+  margin-bottom: 40px;
+}
 .feedback-slides-container .pagination-el {
   display: flex;
   gap: 16px;
@@ -2714,7 +2733,7 @@ Feedback Area CSS
 Testimonials Area CSS
 =================================================*/
 .testimonials-area {
-  background-color: #1c1c1c;
+  background-color: var(--secondaryColor);
   overflow: hidden;
 }
 

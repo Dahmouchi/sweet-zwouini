@@ -15,7 +15,7 @@ const ContactAreaOne = ({ className }: ContactAreaOneProps) => {
         data-group="contactContent"
       >
         <div className="section-title text-center">
-          <h2 className="fw-semibold mx-auto mb-0 text-uppercase">
+          <h2 className="fw-semibold mx-auto mb-0">
             Vous avez des questions ?
           </h2>
           <p>

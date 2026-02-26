@@ -9,7 +9,7 @@ const ContactAreaTwo = () => {
           data-cues="slideInUp"
           data-group="contactContent"
         >
-          <h2 className="fw-semibold text-uppercase">
+          <h2 className="fw-semibold ">
             Votre Avenir dans la Pâtisserie Commence Ici
           </h2>
           <div className="info position-relative d-flex align-items-center justify-content-between mx-auto">

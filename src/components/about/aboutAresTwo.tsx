@@ -11,7 +11,7 @@ const AboutAreaTwo = () => {
         >
           <div className="col-lg-6 col-md-12">
             <div className="who-we-are-content">
-              <h2 className="text-uppercase fw-semibold text-[#f57799] lg:text-start text-center">
+              <h2 className="fs-38 fw-semibold text-[#f57799] lg:text-start text-center">
                 Leaders de la Formation en Pâtisserie
               </h2>
               <p className="lg:text-start text-center">

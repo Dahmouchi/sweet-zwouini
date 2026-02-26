@@ -12,12 +12,10 @@ const PricingArea = () => {
       }}
     >
       <div className="container">
-        <div className="section-title">
-          <div className="title">
-            <h2 className="fs-32 mb-0 fw-semibold text-uppercase text-black">
-              Nos Tarifs de Formation
-            </h2>
-          </div>
+        <div className="section-title text-center">
+          <h2 className="fs-32 mb-0 fw-semibold text-black text-center mx-auto">
+            Nos Tarifs de Formation
+          </h2>
         </div>
 
         <div

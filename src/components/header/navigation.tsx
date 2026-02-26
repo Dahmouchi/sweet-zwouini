@@ -7,9 +7,14 @@ import MobileNavbar from "./mobileNavbar";
 interface NavigationProps {
   logo: string;
   navLinks: NavLink[];
+  isSticky: boolean;
 }
 
-const Navigation: React.FC<NavigationProps> = ({ logo, navLinks }) => {
+const Navigation: React.FC<NavigationProps> = ({
+  logo,
+  navLinks,
+  isSticky,
+}) => {
   return (
     <>
       <MobileNavbar logo={logo} />
@@ -22,7 +27,7 @@ const Navigation: React.FC<NavigationProps> = ({ logo, navLinks }) => {
             <div className="collapse navbar-collapse mean-menu">
               <ul className="navbar-nav mx-auto">
                 {navLinks.map((link, index) => (
-                  <MenuItem key={index} item={link} />
+                  <MenuItem key={index} item={link} isSticky={isSticky} />
                 ))}
               </ul>
               <div className="others-option">

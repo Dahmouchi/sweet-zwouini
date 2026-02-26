@@ -3,7 +3,7 @@ import "@/assets/css/style.css";
 import "@/assets/css/responsive.css";
 import AnimationProvider from "@/components/AnimationProvider";
 import type { Metadata } from "next";
-import { Poppins, Unbounded } from "next/font/google";
+import { Lobster, Poppins } from "next/font/google";
 
 const geistSans = Poppins({
   variable: "--fontFamily",
@@ -15,13 +15,13 @@ const geistSans = Poppins({
   style: "normal",
 });
 
-const geistMono = Unbounded({
+const geistMono = Lobster({
   variable: "--headingFontFamily",
   subsets: ["latin"],
   display: "swap",
   preload: true,
   fallback: ["sans-serif"],
-  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["400"],
   style: "normal",
 });
 

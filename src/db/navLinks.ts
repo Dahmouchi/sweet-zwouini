@@ -15,17 +15,7 @@ export const navLinks: NavLink[] = [
   },
   {
     title: "Formation",
-    href: "#",
-    submenu: [
-      {
-        title: "Nos Tarifs",
-        href: "#pricing",
-      },
-      {
-        title: "Témoignages",
-        href: "#feedback",
-      },
-    ],
+    href: "#pricing",
   },
   {
     title: "Galerie",

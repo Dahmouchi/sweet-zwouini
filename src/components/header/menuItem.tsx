@@ -12,9 +12,10 @@ const isMenuActive = (item: NavLink, pathname: string): boolean => {
 
 interface MenuItemProps {
   item: NavLink;
+  isSticky: boolean;
 }
 
-const MenuItem: React.FC<MenuItemProps> = ({ item }) => {
+const MenuItem: React.FC<MenuItemProps> = ({ item, isSticky }) => {
   const pathname = usePathname();
   const isActive = isMenuActive(item, pathname);
   const hasSubmenu = item.submenu && item.submenu.length > 0;
@@ -26,13 +27,17 @@ const MenuItem: React.FC<MenuItemProps> = ({ item }) => {
         className={`nav-link ${isActive ? "active" : ""} ${
           hasSubmenu ? "dropdown-toggle" : ""
         }`}
+        style={{
+          color: isSticky ? undefined : "white",
+          transition: "color 0.3s ease",
+        }}
       >
         {item.title}
       </Link>
       {hasSubmenu && (
         <ul className="dropdown-menu">
           {item.submenu?.map((subItem, subIndex) => (
-            <MenuItem key={subIndex} item={subItem} />
+            <MenuItem key={subIndex} item={subItem} isSticky={isSticky} />
           ))}
         </ul>
       )}
