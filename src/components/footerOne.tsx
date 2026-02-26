@@ -20,7 +20,7 @@ const FooterOne = () => {
                 <Image
                   width={222}
                   height={60}
-                  src="/images/logoWhite.png"
+                  src="/images/logowhite.png"
                   alt="logo"
                 />
               </Link>
