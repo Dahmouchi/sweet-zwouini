@@ -38,7 +38,7 @@ const HeroTwo = () => {
           <h1 className={`${geistSans.className} text-black`}>100% Femmes</h1>
 
           <div className="btn-box">
-            <Link href="contact" className="default-btn">
+            <Link href="#contact" className="default-btn">
               Contactez-nous
             </Link>
           </div>
