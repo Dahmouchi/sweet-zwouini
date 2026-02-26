@@ -14,7 +14,7 @@ const FooterOne = () => {
     >
       <div className="container">
         <div className="row" data-cues="fadeIn" data-group="footerContent">
-          <div className="col-md-3 col-sm-6">
+          <div className="col-md-3 col-sm-6 text-center text-md-start">
             <div className="single-footer-widget mb-25">
               <Link href="/" className="logo mb-0 d-inline-block">
                 <Image
@@ -31,7 +31,7 @@ const FooterOne = () => {
             </div>
           </div>
 
-          <div className="col-md-3 col-sm-6">
+          <div className="col-md-3 col-sm-6 text-center text-md-start">
             <div className="single-footer-widget mb-25">
               <h3 className="fw-medium">Nos Formations</h3>
               <ul className="custom-links p-0 mb-0 list-unstyled">
@@ -63,7 +63,7 @@ const FooterOne = () => {
               </ul>
             </div>
           </div>
-          <div className="col-md-3 col-sm-6">
+          <div className="col-md-3 col-sm-6 text-center text-md-start">
             <div className="single-footer-widget mb-25">
               <h3 className="fw-medium">Contactez-nous</h3>
               <ul className="custom-links p-0 mb-0 list-unstyled">
@@ -92,7 +92,7 @@ const FooterOne = () => {
           </div>
         </div>
         <div className="copyright-area border-top">
-          <div className="row align-items-center">
+          <div className="row align-items-center text-center text-md-start">
             <div className="col-lg-6 col-sm-6">
               <p className="mb-0">
                 © {new Date().getFullYear()} Sweet Zwouini. Tous droits
@@ -105,7 +105,7 @@ const FooterOne = () => {
                 <li className="d-inline-block ms-3"></li>
               </ul>
             </div>
-            <div className="col-lg-3 col-sm-6">
+            <div className="col-lg-3 col-sm-6 d-flex justify-content-center justify-content-md-start">
               <div className="socials">
                 <Link
                   target="_blank"
